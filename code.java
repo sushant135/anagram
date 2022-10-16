@@ -16,7 +16,7 @@ public class CodesCracker
        lenOne = strOne.length();
        lenTwo = strTwo.length();
       
-       if(lenOne == lenOne)
+       if(lenOne == lenTwo)
        {
            for(i=0; i<lenOne; i++)
            {
@@ -29,13 +29,13 @@ public class CodesCracker
                        break;
                    }
                }
-               if(found == 1)
+               if(found == 0)
                {
-                   not_found = 0;
+                   not_found = 1;
                    break;
                }
            }
-           if(not_found == 0)
+           if(not_found == 1)
                System.out.println("\nStrings are not Anagram");
            else
                System.out.println("\nStrings are Anagram");
